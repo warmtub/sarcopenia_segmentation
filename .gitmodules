@@ -1,3 +1,4 @@
 [submodule "Image_Segmentation"]
 	path = Image_Segmentation
 	url = https://github.com/LeeJunHyun/Image_Segmentation.git
+	ignore = dirty
