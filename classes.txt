@@ -1,0 +1,12 @@
+0. background
+1. Rt psoas major mucle
+2. Lt psoas major mucle
+3. Rt quardratus lumborum muscle
+4. Lt quardratus lumborum muscle
+5. Rt eretor spinae muscle
+6. Lt eretor spinae muscle
+7. Rt trans abd,int and ext obl
+8. Lt trans abd,int and ext obl
+9. Rt rectus abdominus muscle
+10. Lt rectus abdominus muscle
+11.L3 Vertebral body
