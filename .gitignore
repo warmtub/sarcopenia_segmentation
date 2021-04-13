@@ -1,6 +1,8 @@
 __pycache__/*
 .ipynb_checkpoints/*
 *.png
+*.dcm
+*.json
 *.pkl
 sarcopenia_data/
 Image_Segmentation/models/*
