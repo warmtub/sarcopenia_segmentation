@@ -1,6 +1,8 @@
 import asyncio
 import boto3
+import base64
 import cv2
+import io
 import logging
 import numpy as np
 import os
@@ -187,7 +189,12 @@ class Sarcopenia_Inference_APP(object):
 
         inference_response['version'] = '4.5.6'
         file_name = ''.join(dicom_file.split('/')[-1].split('.')[:-1])
-        inference_response['imagePath'] = file_name+'.png'
+        #inference_response['imagePath'] = file_name+'.png'        
+        imageData = io.BytesIO()
+        image_src.save(imageData, format='png')
+        imageData = imageData.getvalue()
+        imageData = base64.b64encode(imageData).decode("utf-8")
+        inference_response['imageData'] = imageData
         inference_response['imageHeight'] = image_h
         inference_response['imageWidth'] = image_w
         inference_response['shapes'] = shapes
